@@ -5,10 +5,10 @@ import Image from 'next/image'
 export default function Home() {
     return (
         <>
-            <section className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0'>
+            <section className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
                 <div className='w-3/5 h-fit mx-auto flex justify-center items-center gap-20 mt-20'>
                     <div className=''>
-                        <p className='text-lg font-bold'> Web-Application Developer | Software Developer </p>
+                        <p className='text-lg font-bold'> Software Developer | Web-Application Developer </p>
                         <p className='text-6xl font-bold mt-1'> Hello I'm </p>
                         <p className='text-5xl font-bold text-emerald-400 dancingFont mt-2 mb-4'> Suraj kumar jha </p>
                         <p className='text-sm text-gray-300'> Full Stack Web Application and Software Developer with expertise in designing and developing end-to-end solutions. Skilled in both front-end and back-end technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
@@ -44,8 +44,8 @@ export default function Home() {
                     </div>
 
                     <div className=''>
-                        <div className='w-96 h-96 rounded-full border-2 border-emerald-400'>
-                            <Image src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg" alt="myImage" width={125} height={125} />
+                        <div className='w-96 h-96 rounded-full border-2 border-emerald-400 flex justify-center items-center overflow-hidden'>
+                            <Image src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg" alt="myImage" width={355} height={355} className='mix-blend-hard-light w-full h-full'/>
                         </div>
                     </div>
                 </div>

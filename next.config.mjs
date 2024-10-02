@@ -7,6 +7,18 @@ const nextConfig = {
             {
                 hostname: 't4.ftcdn.net',
             },
+            {
+                hostname: "www.freeiconspng.com"
+            },
+            {
+                hostname: "www.iconpacks.net"
+            },
+            {
+                hostname: "static.vecteezy.com"
+            },
+            {
+                hostname: "cdn-icons-png.flaticon.com" 
+            }
         ],
     },
 };

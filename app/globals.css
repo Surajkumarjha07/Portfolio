@@ -31,3 +31,21 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.customScroll::-webkit-scrollbar{
+  width: 4px;
+}
+
+.customScroll::-webkit-scrollbar-thumb{
+  background-color: rgb(21, 217, 149);
+  border-radius: 10px;
+}
+
+.customScroll::-webkit-scrollbar-track{
+  background-color: #1F2937;
+  border-radius: 10px;
+}
+
+.customScroll::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(6, 181, 117);
+}
