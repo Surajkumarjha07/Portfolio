@@ -5,11 +5,13 @@ type work = {
     sno: number,
     title: string,
     description: string,
-    technologies: string
-    img: string
+    technologies: string,
+    img: string,
+    previous: () => void,
+    next: () => void
 }
 
-export default function WorkComponent({sno, title, description, technologies, img}: work) {
+export default function WorkComponent({sno, title, description, technologies, img, previous, next}: work) {
     return (
         <>
             <div className='w-1/2 pr-8 flex flex-col justify-start items-start gap-8'>
@@ -34,11 +36,11 @@ export default function WorkComponent({sno, title, description, technologies, im
                 <Image src={img} alt="myImage" width={355} height={355} className='mix-blend-hard-light w-full h-full' />
 
                 <div className='flex justify-end items-center gap-5 my-10'>
-                    <button className='flex justify-center items-center bg-emerald-400 p-1'>
+                    <button className='flex justify-center items-center bg-emerald-400 p-1' onClick={previous}>
                         <Image src={'https://cdn-icons-png.flaticon.com/512/109/109618.png'} alt='left arrow' width={25} height={25} />
                     </button>
 
-                    <button className='flex justify-center items-center bg-emerald-400 p-1'>
+                    <button className='flex justify-center items-center bg-emerald-400 p-1' onClick={next}>
                         <Image src={'https://cdn-icons-png.flaticon.com/512/109/109617.png'} alt='right arrow' width={25} height={25} />
                     </button>
                 </div>

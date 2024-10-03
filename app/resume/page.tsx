@@ -32,7 +32,7 @@ export default function Resume() {
 
                     {
                         title === 'Education' ?
-                            <ResumeComponent title='My Education' description='Below is a detailed overview of my Education throughout my life.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }, { date: '01-May-2020 - 30-March-2022', title: 'Intermediate School', company: 'Govt. Boys Sr. Sec. High School (Tikona Park)' }, { date: '01-july-2022 - Present', title: 'BCA - Bachelor of Computer Applications', company: 'IGNOU - Indira Gandhi National Open University' }]} /> : ''
+                            <ResumeComponent title='My Education' description='Below is a detailed overview of my Education throughout my life.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }, { date: '01-july-2022 - Present', title: 'BCA - Bachelor of Computer Applications', company: 'IGNOU - Indira Gandhi National Open University' }, { date: '01-May-2020 - 30-March-2022', title: 'Intermediate School', company: 'Govt. Boys Sr. Sec. High School (Tikona Park)' }]} /> : ''
                     }
 
                     {
