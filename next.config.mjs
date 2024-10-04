@@ -18,6 +18,9 @@ const nextConfig = {
             },
             {
                 hostname: "cdn-icons-png.flaticon.com" 
+            },
+            {
+                hostname: "img.icons8.com"
             }
         ],
     },

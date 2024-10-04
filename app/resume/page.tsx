@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import ResumeComponent from '../components/resumeComponent'
 import Resume_SkillCard from '../components/resume_SkillCard'
+import { motion } from 'framer-motion'
 
 export default function Resume() {
     const [title, setTitle] = useState('Experience')
@@ -14,7 +15,7 @@ export default function Resume() {
     return (
         <>
             <section className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
-                <div className='w-3/5 h-3/4 flex justify-center items-start gap-10'>
+                <div className='w-3/5 h-fit pt-10 flex justify-center items-start gap-10'>
                     <div className='w-96 h-full'>
                         <h1 className='text-3xl font-bold dancingFont'> Why hire me? </h1>
                         <p className='text-gray-400 text-sm my-10'> Here, you can check out my skills, experiences and about my education etc.  </p>
@@ -25,8 +26,9 @@ export default function Resume() {
                             <button className={title === 'About Me' ? 'text-gray-800 font-semibold bg-emerald-200 w-full h-fit py-2 rounded-lg' : 'text-gray-800 font-semibold bg-emerald-500 w-full h-fit py-2 rounded-lg'} onClick={() => active('About Me')}> About Me </button>
                         </div>
                     </div>
+
                     {
-                        title === 'Experience' ?
+                        title === 'Experience' ? 
                             <ResumeComponent title='My Experience' description='Below is a detailed overview of my works and skills' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }]} /> : ''
                     }
 
@@ -106,7 +108,7 @@ export default function Resume() {
                     }
 
                 </div>
-            </section>
+            </section >
         </>
     )
 }
