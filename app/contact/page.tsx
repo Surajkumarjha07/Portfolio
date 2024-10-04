@@ -63,7 +63,7 @@ export default function Contact() {
     return (
         <>
             <section className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
-                <div className='w-3/5 h-fit pt-10 flex justify-center items-start'>
+                <div className='w-3/5 h-fit mt-20 flex justify-center items-start'>
                     <AnimatePresence mode="wait">
                         <motion.div
                             initial={{ y: 100, opacity: 0 }}

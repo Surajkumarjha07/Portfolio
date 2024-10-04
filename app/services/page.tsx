@@ -16,9 +16,9 @@ export default function Services() {
           >
             {
               <>
-                <div className='w-3/5 h-fit mx-auto flex justify-between items-center flex-wrap'>
+                <div className='w-3/5 h-fit mt-20 mx-auto flex justify-between items-center flex-wrap'>
 
-                  <div className='w-[26rem] h-fit bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
+                  <div className='w-[26rem] h-fit mb-10 bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
                     <div className='flex justify-between items-center'>
                       <p className='text-5xl font-bold group-hover:text-emerald-400 transition-all duration-500'> 01 </p>
                       <div className='w-12 h-12 rounded-full bg-white p-2 rotate-45 group-hover:bg-emerald-400 hover:rotate-0 transition-all duration-500'>
@@ -31,7 +31,7 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <div className='w-[26rem] h-fit bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
+                  <div className='w-[26rem] h-fit mb-10 bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
                     <div className='flex justify-between items-center'>
                       <p className='text-5xl font-bold group-hover:text-emerald-400 transition-all duration-500'> 02 </p>
                       <div className='w-12 h-12 rounded-full bg-white p-2 rotate-45 group-hover:bg-emerald-400 hover:rotate-0 transition-all duration-500'>
@@ -44,7 +44,7 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <div className='w-[26rem] h-fit bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
+                  <div className='w-[26rem] h-fit mb-10 bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
                     <div className='flex justify-between items-center'>
                       <p className='text-5xl font-bold group-hover:text-emerald-400 transition-all duration-500'> 03 </p>
                       <div className='w-12 h-12 rounded-full bg-white p-2 rotate-45 group-hover:bg-emerald-400 hover:rotate-0 transition-all duration-500'>
@@ -57,7 +57,7 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <div className='w-[26rem] h-fit bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
+                  <div className='w-[26rem] h-fit mb-10 bg-gray-800 px-7 py-3 rounded-xl border-b-4 border-gray-500 hover:border-b-4 hover:border-emerald-400 transition-all duration-500 group'>
                     <div className='flex justify-between items-center'>
                       <p className='text-5xl font-bold group-hover:text-emerald-400 transition-all duration-500'> 04 </p>
                       <div className='w-12 h-12 rounded-full bg-white p-2 rotate-45 group-hover:bg-emerald-400 hover:rotate-0 transition-all duration-500'>

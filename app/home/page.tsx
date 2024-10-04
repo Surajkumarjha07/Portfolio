@@ -17,16 +17,16 @@ export default function Home() {
                     >
                         {
                             <>
-                                <div className='w-3/5 h-fit mx-auto flex justify-center items-center gap-20 mt-20'>
+                                <div className='w-3/5 h-fit mx-auto flex justify-center items-center gap-20 mt-20 max-[428px]:flex-col max-md:justify-center max-md:items-center max-md:w-full max-md:px-2 max-[428px]:mt-[24rem] max-md:mt-24 max-md:gap-5'>
                                     <div className=''>
-                                        <p className='text-lg font-bold'> Software Developer | Web-Application Developer </p>
-                                        <p className='text-6xl font-bold mt-1'> Hello I'm </p>
-                                        <p className='text-5xl font-bold text-emerald-400 dancingFont mt-2 mb-4'> Suraj kumar jha </p>
-                                        <p className='text-sm text-gray-300'> Full Stack Web Application and Software Developer with expertise in designing and developing end-to-end solutions. Skilled in both front-end and back-end technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
+                                        <p className='text-lg font-bold max-md:text-sm'> Software Developer | Web-Application Developer </p>
+                                        <p className='text-6xl font-bold mt-1 max-md:text-xl'> Hello I'm </p>
+                                        <p className='text-5xl font-bold text-emerald-400 dancingFont mt-2 mb-4 max-md:text-lg'> Suraj kumar jha </p>
+                                        <p className='text-sm text-gray-300 max-md:text-xs'> Full Stack Web Application and Software Developer with expertise in designing and developing end-to-end solutions. Skilled in both front-end and back-end technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
 
-                                        <div className='flex justify-start items-center gap-10 my-10'>
+                                        <div className='flex justify-start items-center gap-10 my-10 max-md:gap-5 max-md:justify-center'>
                                             <a href={'/My_Resume.docx'} download="SurajKumarJha">
-                                            <button className='flex justify-center items-center gap-4 font-bold bg-emerald-400 text-gray-950 border-2 border-emerald-400 px-4 py-2 rounded-full'> Download CV <Image src="https://img.icons8.com/?size=64&id=frlIxSuEDkbi&format=png" alt='' width={20} height={20}/> </button>
+                                            <button className='flex justify-center items-center gap-4 font-bold bg-emerald-400 text-gray-950 border-2 border-emerald-400 px-4 py-2 rounded-full max-md:text-xs max-md:px-3 max-md:py-1 max-md:gap-2'> Download CV <Image src="https://img.icons8.com/?size=64&id=frlIxSuEDkbi&format=png" alt='' width={20} height={20} className='max-md:w-4 max-md:h-4'/> </button>
                                             </a>
 
                                             <Link href={'https://www.linkedin.com/in/suraj-kumar-jha-1946712aa/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B%2FERbeHxIS3K7JbSxh3caGQ%3D%3D'}>
@@ -56,41 +56,41 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className=''>
-                                        <div className='w-96 h-96 rounded-full border-4 border-emerald-400 flex justify-center items-center overflow-hidden'>
-                                            <Image src="/myImage.jpg" alt="myImage" width={355} height={355} className='w-full h-full' />
+                                    <div>
+                                        <div className='w-96 h-96 rounded-full border-4 border-emerald-400 flex justify-center items-center overflow-hidden max-md:w-48 max-md:h-48'>
+                                            <Image src="/myImage.jpg" alt="myImage" width={1000} height={1000} className='w-full h-full' />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className='w-3/5 flex justify-start items-center gap-20 mt-10 mx-auto'>
-                                    <div className='flex jusce items-center gap-3'>
-                                        <p className='text-6xl font-bold'> 2 </p>
-                                        <div className='text-sm font-medium'>
+                                <div className='w-3/5 flex justify-start items-center gap-20 mt-10 mx-auto max-md:flex-wrap max-md:gap-4 max-md:justify-between max-md:w-full max-md:px-2 pb-10'>
+                                    <div className='flex justify-center items-center gap-3'>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> 2 </p>
+                                        <div className='text-sm font-medium max-md:text-xs'>
                                             <p> years of </p>
                                             <p> experience </p>
                                         </div>
                                     </div>
 
-                                    <div className='flex jusce items-center gap-3'>
-                                        <p className='text-6xl font-bold'> 8 </p>
-                                        <div className='text-sm font-medium'>
+                                    <div className='flex justify-center items-center gap-3'>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> 8 </p>
+                                        <div className='text-sm font-medium max-md:text-xs'>
                                             <p> Projects </p>
                                             <p> completed </p>
                                         </div>
                                     </div>
 
-                                    <div className='flex jusce items-center gap-3'>
-                                        <p className='text-6xl font-bold'> 12 </p>
-                                        <div className='text-sm font-medium'>
+                                    <div className='flex justify-center items-center gap-3'>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> 12 </p>
+                                        <div className='text-sm font-medium max-md:text-xs'>
                                             <p> Technologies </p>
                                             <p> mastered </p>
                                         </div>
                                     </div>
 
-                                    <div className='flex jusce items-center gap-3'>
-                                        <p className='text-6xl font-bold'> 49 </p>
-                                        <div className='text-sm font-medium'>
+                                    <div className='flex justify-center items-center gap-3'>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> 49 </p>
+                                        <div className='text-sm font-medium max-md:text-xs'>
                                             <p> Code </p>
                                             <p> commits </p>
                                         </div>
