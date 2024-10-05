@@ -26,7 +26,7 @@ export default function WorkComponent({ sno, title, description, technologies, i
         <>
             {
                 <>
-                    <div className='w-1/2 pr-8 flex flex-col justify-start items-start gap-8'>
+                    <div className='w-1/2 h-full pr-8 flex flex-col justify-start items-start gap-8 max-md:w-full max-md:pr-0 max-md:mb-7'>
                         <p className='text-4xl font-bold'> 0{sno} </p>
                         <p className='text-3xl font-extrabold'> {title} </p>
                         <p className='text-sm font-semibold text-gray-400'> {description} </p>
@@ -49,7 +49,7 @@ export default function WorkComponent({ sno, title, description, technologies, i
                         </div>
                     </div>
 
-                    <div className='w-1/2 h-full flex flex-col justify-between items-end'>
+                    <div className='w-1/2 h-full flex flex-col justify-between items-end max-md:w-full'>
                         {
                             anime ?
                                 <AnimatePresence mode="wait">
