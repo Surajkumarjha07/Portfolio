@@ -14,41 +14,61 @@ export default function Home() {
         for (let i = 0; i <= index; i++) {
             setTimeout(() => {
                 setExperience(i)
-            }, i*500);            
+            }, i * 500);
         }
     }
 
     const increaseProjects = (index: number) => {
+        let totalDelay = 0;
+
         for (let i = 0; i <= index; i++) {
+            const delay = i > index - 4 ? 300 : 100;
+
             setTimeout(() => {
-                setProjects(i)
-            }, i*150);            
+                setProjects(i);
+            }, totalDelay);
+
+            totalDelay += delay;
         }
     }
 
     const increaseTechnologies = (index: number) => {
+        let totalDelay = 0;
+
         for (let i = 0; i <= index; i++) {
+            const delay = i > index - 4 ? 400 : 150;
+
             setTimeout(() => {
-                setTechnologies(i)
-            }, i*200);            
+                setTechnologies(i);
+            }, totalDelay);
+
+            totalDelay += delay;
         }
+
     }
 
     const increaseCommits = (index: number) => {
+        let totalDelay = 0;
+
         for (let i = 0; i <= index; i++) {
+            const delay = i > index - 10 ? 120 : 40;
+
             setTimeout(() => {
-                setCommits(i)
-            }, i*40);            
+                setCommits(i);
+            }, totalDelay);
+
+            totalDelay += delay;
         }
-    }  
+    };
+
 
     useEffect(() => {
-     increaseExperience(2)
-     increaseProjects(10)
-     increaseTechnologies(12)
-     increaseCommits(61)
+        increaseExperience(2)
+        increaseProjects(10)
+        increaseTechnologies(12)
+        increaseCommits(61)
     }, [])
-    
+
 
     return (
         <>
