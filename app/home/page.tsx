@@ -1,10 +1,55 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { AnimatePresence, motion } from 'framer-motion'
 
 export default function Home() {
+    const [experience, setExperience] = useState(0)
+    const [projects, setProjects] = useState(0)
+    const [technologies, setTechnologies] = useState(0)
+    const [commits, setCommits] = useState(0)
+
+    const increaseExperience = (index: number) => {
+        for (let i = 0; i <= index; i++) {
+            setTimeout(() => {
+                setExperience(i)
+            }, i*500);            
+        }
+    }
+
+    const increaseProjects = (index: number) => {
+        for (let i = 0; i <= index; i++) {
+            setTimeout(() => {
+                setProjects(i)
+            }, i*150);            
+        }
+    }
+
+    const increaseTechnologies = (index: number) => {
+        for (let i = 0; i <= index; i++) {
+            setTimeout(() => {
+                setTechnologies(i)
+            }, i*200);            
+        }
+    }
+
+    const increaseCommits = (index: number) => {
+        for (let i = 0; i <= index; i++) {
+            setTimeout(() => {
+                setCommits(i)
+            }, i*40);            
+        }
+    }  
+
+    useEffect(() => {
+     increaseExperience(2)
+     increaseProjects(10)
+     increaseTechnologies(12)
+     increaseCommits(61)
+    }, [])
+    
+
     return (
         <>
             <section className='w-full h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
@@ -65,7 +110,7 @@ export default function Home() {
 
                                 <div className='w-3/5 flex justify-start items-center gap-20 mt-10 mx-auto max-md:flex-wrap max-md:gap-4 max-md:justify-between max-md:w-full max-md:px-2 pb-10 max-xl:justify-between max-xl:w-full max-xl:px-4'>
                                     <div className='flex justify-center items-center gap-3'>
-                                        <p className='text-6xl font-bold max-md:text-3xl'> 2 </p>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> {experience} </p>
                                         <div className='text-sm font-medium max-md:text-[10px]'>
                                             <p> years of </p>
                                             <p> experience </p>
@@ -73,7 +118,7 @@ export default function Home() {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <p className='text-6xl font-bold max-md:text-3xl'> 8 </p>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> {projects} </p>
                                         <div className='text-sm font-medium max-md:text-[10px]'>
                                             <p> Projects </p>
                                             <p> completed </p>
@@ -81,7 +126,7 @@ export default function Home() {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <p className='text-6xl font-bold max-md:text-3xl'> 12 </p>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> {technologies} </p>
                                         <div className='text-sm font-medium max-md:text-[10px]'>
                                             <p> Technologies </p>
                                             <p> mastered </p>
@@ -89,7 +134,7 @@ export default function Home() {
                                     </div>
 
                                     <div className='flex justify-center items-center gap-3'>
-                                        <p className='text-6xl font-bold max-md:text-3xl'> 49 </p>
+                                        <p className='text-6xl font-bold max-md:text-3xl'> {commits} </p>
                                         <div className='text-sm font-medium max-md:text-[10px]'>
                                             <p> Code </p>
                                             <p> commits </p>
