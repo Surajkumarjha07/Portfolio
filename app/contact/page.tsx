@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Contact() {
     const [hide, setHide] = useState(true)
@@ -17,7 +18,7 @@ export default function Contact() {
     }
 
     const selectService = (e: React.MouseEvent<HTMLParagraphElement>) => {
-        let target = e.target as HTMLParagraphElement
+        const target = e.target as HTMLParagraphElement
         if (target.innerHTML) {
             setServiceName(target.innerHTML)
         }
@@ -26,7 +27,7 @@ export default function Contact() {
 
     useEffect(() => {
         window.addEventListener('click', (e) => {
-            let target = e.target as HTMLElement
+            const target = e.target as HTMLElement
             if (!target.classList.contains('hide')) {
                 setHide(true)
             }
@@ -74,7 +75,7 @@ export default function Contact() {
                         >
                             <div className='w-full h-full'>
                                 <form action="" className='w-full h-full bg-gray-600 px-10 py-6 rounded-xl max-md:py-2 max-md:px-2 max-[1100px]:w-96' onSubmit={sendEmail}>
-                                    <h1 className='text-emerald-400 font-bold text-3xl max-md:text-sm'> Let's Work together </h1>
+                                    <h1 className='text-emerald-400 font-bold text-3xl max-md:text-sm'> Let&apos;s Work together </h1>
                                     <p className='text-gray-400 font-semibold text-sm my-4 max-md:text-xs'> Fill your information and send me the message so i will be in touch with you. </p>
                                     <div className='flex justify-center items-center gap-5'>
                                         <input type="text" name="firstName" placeholder='First Name' className='p-2 w-full text-gray-300 text-sm font-bold bg-gray-800 rounded-md placeholder:text-xs placeholder:text-gray-400 placeholder:font-bold outline-none' onInput={(e) => setFirstName((e.target as HTMLInputElement).value)} value={firstName} />
@@ -107,7 +108,7 @@ export default function Contact() {
                     <div className='w-1/2 h-full flex flex-col justify-center items-start pl-20 gap-8 max-md:w-full max-md:pl-0'>
                         <div className='flex justify-center items-center gap-5 max-md:gap-2'>
                             <div className='bg-emerald-500 p-2 rounded-md max-md:p-1'>
-                                <img src="https://img.icons8.com/?size=50&id=9730&format=png" alt="phone" className='w-10 h-10 max-md:w-8 max-md:h-8' />
+                                <Image src="https://img.icons8.com/?size=50&id=9730&format=png" alt="phone" className='w-10 h-10 max-md:w-8 max-md:h-8' width={100} height={100}/>
                             </div>
                             <div>
                                 <p className='font-bold text-sm text-emerald-400 max-md:text-xs'> Phone </p>
@@ -117,7 +118,7 @@ export default function Contact() {
 
                         <div className='flex justify-center items-center gap-5 max-md:gap-2'>
                             <div className='bg-emerald-500 p-2 rounded-md max-md:p-1'>
-                                <img src="https://cdn-icons-png.freepik.com/256/1159/1159692.png?semt=ais_hybrid" alt="email" className='w-10 h-10 max-md:w-8 max-md:h-8' />
+                                <Image src="https://cdn-icons-png.freepik.com/256/1159/1159692.png?semt=ais_hybrid" alt="email" className='w-10 h-10 max-md:w-8 max-md:h-8' width={100} height={100}/>
                             </div>
                             <div>
                                 <p className='text-emerald-400 font-bold text-sm max-md:text-xs'> Email </p>
@@ -127,7 +128,7 @@ export default function Contact() {
 
                         <div className='flex justify-center items-center gap-5 max-md:gap-2'>
                             <div className='bg-emerald-500 p-2 rounded-md'>
-                                <img src="https://icons.iconarchive.com/icons/steve/zondicons/256/Location-icon.png" alt="phone" className='w-10 h-10 max-md:w-7 max-md:h-7' />
+                                <Image src="https://icons.iconarchive.com/icons/steve/zondicons/256/Location-icon.png" alt="phone" className='w-10 h-10 max-md:w-7 max-md:h-7' width={100} height={100}/>
                             </div>
                             <div>
                                 <p className='text-emerald-400 font-bold text-sm max-md:text-xs'> Address </p>

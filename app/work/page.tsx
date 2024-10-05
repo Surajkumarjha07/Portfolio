@@ -12,16 +12,13 @@ export default function Work() {
   const appLink = ['','','']
 
   const [index, setIndex] = useState(0)
-  const [animate, setAnimate] = useState(true)
 
   const previous = () => {
     setIndex(prev => prev>0? prev-1 : prev)
-    setAnimate(true) 
   }
 
   const next = () => {
     setIndex(prev => prev<snoArray.length-1? prev+1: prev)
-    setAnimate(true)
   }
 
   return (

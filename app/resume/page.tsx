@@ -1,9 +1,7 @@
 'use client'
-import Image from 'next/image'
 import React, { useState } from 'react'
 import ResumeComponent from '../components/resumeComponent'
 import Resume_SkillCard from '../components/resume_SkillCard'
-import { motion } from 'framer-motion'
 
 export default function Resume() {
     const [title, setTitle] = useState('Experience')
