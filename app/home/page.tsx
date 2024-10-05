@@ -61,7 +61,6 @@ export default function Home() {
         }
     };
 
-
     useEffect(() => {
         increaseExperience(2)
         increaseProjects(10)
