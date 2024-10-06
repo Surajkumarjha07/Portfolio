@@ -71,7 +71,7 @@ export default function Home() {
 
     return (
         <>
-            <section className='w-full h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
+            <section className='w-full h-screen flex flex-col justify-start items-center absolute top-28 bottom-0 left-0 right-0 -z-10'>
                 <AnimatePresence mode="wait">
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
@@ -81,22 +81,22 @@ export default function Home() {
                     >
                         {
                             <>
-                                <div className='w-3/5 h-fit mx-auto flex justify-between items-center mt-20 max-xl:justify-center max-[428px]:flex-col max-lg:w-full max-md:px-2 max-[428px]:mt-[24rem] max-xl:mt-24 max-[1450px]:mt-64 max-xl:gap-7 max-xl:w-full'>
+                                <div className='w-3/5 h-fit mx-auto flex justify-between items-center max-xl:justify-center max-[428px]:flex-col max-lg:w-full max-md:px-2 max-xl:gap-7 max-xl:w-full'>
                                     <div className='w-1/2 max-md:w-full max-xl:w-1/2'>
                                         <p className='text-lg font-bold max-xl:text-sm'> Software Developer | Web-Application Developer </p>
                                         <p className='text-6xl font-bold mt-1 max-xl:text-3xl'> Hello I&apos;m </p>
                                         <p className='text-5xl font-bold text-emerald-400 dancingFont mt-2 mb-4 max-xl:text-2xl'> Suraj kumar jha </p>
-                                        <p className='text-sm text-gray-300 max-xl:text-xs'> Full Stack Web Application and Software Developer with expertise in designing and developing end-to-end solutions. Skilled in both front-end and back-end technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
+                                        <p className='text-sm font-semibold text-gray-300 max-sm:text-xs'> Full Stack Web Application and Software Developer with expertise in designing and developing end-to-end solutions. Skilled in both front-end and back-end technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
 
                                         <div className='flex justify-start items-center gap-10 my-10 max-md:gap-5 max-md:justify-center'>
                                             <a href={'/My_Resume.docx'} download="SurajKumarJha">
-                                                <button className='flex justify-center items-center gap-4 font-bold bg-emerald-400 text-gray-950 border-2 border-emerald-400 px-4 py-2 rounded-full max-md:text-xs max-md:px-3 max-md:py-1 max-[1450px]:py-2 max-[1450px]:text-xs max-[1450px]:gap-2'> Download CV <Image src="/download.png" alt='' width={20} height={20} className='max-md:w-4 max-md:h-4' /> </button>
+                                                <button className='flex justify-center items-center text-sm gap-4 font-bold bg-emerald-400 text-gray-950 border-2 border-emerald-400 px-4 py-2 rounded-full max-md:px-3 max-[350px]:py-1 max-sm:text-xs max-lg:gap-2'> Download CV <Image src="/download.png" alt='' width={20} height={20} className='max-md:w-4 max-md:h-4' /> </button>
                                             </a>
 
                                             <Link href={'https://www.linkedin.com/in/suraj-kumar-jha-1946712aa/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B%2FERbeHxIS3K7JbSxh3caGQ%3D%3D'}>
                                                 <div className='bg-gradient-to-b from-sky-700 to-white rounded-full p-[2px]'>
                                                     <div className='w-fit h-fit p-1 bg-gray-800 cursor-pointer rounded-full '>
-                                                        <Image src="/linkedIn.webp" className='w-8 h-8' alt='LinkedIn' width={100} height={100}/>
+                                                        <Image src="/linkedIn.webp" className='w-8 h-8' alt='LinkedIn' width={100} height={100} />
                                                     </div>
                                                 </div>
                                             </Link>
@@ -104,7 +104,7 @@ export default function Home() {
                                             <Link href={'https://github.com/dashboard'}>
                                                 <div className='bg-gradient-to-b from-black to-white rounded-full p-[2px]'>
                                                     <div className='w-fit h-fit p-1 bg-gray-800 cursor-pointer rounded-full '>
-                                                        <Image src="/github.png" className='w-8 h-8' alt='github' width={100} height={100}/>
+                                                        <Image src="/github.png" className='w-8 h-8' alt='github' width={100} height={100} />
                                                     </div>
                                                 </div>
                                             </Link>
@@ -112,7 +112,7 @@ export default function Home() {
                                             <Link href={'https://www.instagram.com/'}>
                                                 <div className='bg-gradient-to-b from-pink-700 via-white to-violet-700 rounded-full p-[2px]'>
                                                     <div className='w-fit h-fit p-1 bg-gray-800 cursor-pointer rounded-full '>
-                                                        <Image src="/instagram.webp" className='w-8 h-8' alt='instagram' width={100} height={100}/>
+                                                        <Image src="/instagram.webp" className='w-8 h-8' alt='instagram' width={100} height={100} />
                                                     </div>
                                                 </div>
                                             </Link>

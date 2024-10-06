@@ -12,8 +12,8 @@ export default function Resume() {
 
     return (
         <>
-            <section className='w-screen h-screen flex flex-col justify-start items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
-                <div className='w-3/5 h-fit mt-32 flex justify-center items-start gap-10 max-xl:flex-col max-xl:w-screen'>
+            <section className='w-screen h-screen flex flex-col justify-start items-center absolute top-28 bottom-0 left-0 right-0 -z-10'>
+                <div className='w-3/5 h-fit flex justify-center items-start gap-10 max-xl:flex-col max-xl:w-screen'>
                     <div className='w-96 h-full max-xl:w-screen max-xl:px-4'>
                         <h1 className='text-3xl font-bold dancingFont'> Why hire me? </h1>
                         <p className='text-gray-400 text-sm my-10'> Here, you can check out my skills, experiences and about my education etc.  </p>
@@ -50,7 +50,7 @@ export default function Resume() {
                                     <Resume_SkillCard title='Next.js' img='/nextJs.Default' />
                                     <Resume_SkillCard title='Angular' img='/angular.png' />
                                     <Resume_SkillCard title='NodeJs' img='/nodeJs.webp' />
-                                    <Resume_SkillCard title='ExpressJs' img='express.webp' />
+                                    <Resume_SkillCard title='ExpressJs' img='/express.webp' />
                                     <Resume_SkillCard title='FastAPI' img='/fastapi.svg' />
                                     <Resume_SkillCard title='MongoDB' img='/mongoDB.svg' />
                                     <Resume_SkillCard title='PostgreSQL' img='/PostgreSQL.png' />

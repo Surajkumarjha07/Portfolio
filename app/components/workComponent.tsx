@@ -35,14 +35,14 @@ export default function WorkComponent({ sno, title, description, technologies, i
                         <div className='flex justify-start items-center gap-10'>
                             <Link href={appLink}>
                                 <button className='w-12 h-12 rounded-full bg-white p-2 -rotate-45 hover:bg-emerald-400 hover:rotate-0 transition-all duration-500'>
-                                    <Image src="https://www.freeiconspng.com/uploads/right-arrow-icon-12.png" alt="arrow" width={50} height={50} />
+                                    <Image src="/rightArrow.png" alt="arrow" width={50} height={50} />
                                 </button>
                             </Link>
 
                             <Link href={gitHubLink}>
                                 <button className='bg-gradient-to-b from-black to-white rounded-full p-[2px]'>
                                     <div className='w-fit h-fit p-1 bg-gray-800 cursor-pointer rounded-full '>
-                                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" className='w-8 h-8' />
+                                        <Image src="/github.png" alt='gitHub' width={100} height={100} className='w-8 h-8' />
                                     </div>
                                 </button>
                             </Link>
@@ -67,11 +67,11 @@ export default function WorkComponent({ sno, title, description, technologies, i
                         }
                         <div className='flex justify-end items-center gap-5 my-10'>
                             <button className='flex justify-center items-center bg-emerald-400 p-1' onClick={previous}>
-                                <Image src={'https://cdn-icons-png.flaticon.com/512/109/109618.png'} alt='left arrow' width={25} height={25} />
+                                <Image src={'/leftArrow2.png'} alt='left arrow' width={25} height={25} />
                             </button>
 
                             <button className='flex justify-center items-center bg-emerald-400 p-1' onClick={next}>
-                                <Image src={'https://cdn-icons-png.flaticon.com/512/109/109617.png'} alt='right arrow' width={25} height={25} />
+                                <Image src={'/rightArrow2.png'} alt='right arrow' width={25} height={25} />
                             </button>
                         </div>
                     </div> </>

@@ -23,8 +23,8 @@ export default function Work() {
 
   return (
     <>
-      <section className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
-        <div className='w-3/5 h-fit mt-20 flex justify-center items-start max-xl:w-screen max-xl:px-4 max-md:flex-col max-xl:items-center max-md:mt-[36rem]'>
+      <section className='w-screen h-screen flex flex-col justify-start items-center absolute top-28 bottom-0 left-0 right-0 -z-10'>
+        <div className='w-3/5 h-fit flex justify-center items-start max-xl:w-screen max-xl:px-4 max-md:flex-col max-xl:items-center'>
           <WorkComponent sno={snoArray[index]} title={titleArray[index]} description={descriptionArray[index]} technologies={TechnologiesArray[index]} img={ImageArray[index]} previous={previous} gitHubLink={gitHubLink[index]} appLink={appLink[index]} next={next}/>
         </div>
       </section>
