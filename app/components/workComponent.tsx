@@ -59,7 +59,7 @@ export default function WorkComponent({ sno, title, description, technologies, i
                                         exit={{ y: -10, opacity: 0 }}
                                         transition={{ duration: 0.7 }}
                                         className='w-full flex justify-center items-center'
-                                        onAnimationEnd = {() => setanime(false)}
+                                        onAnimationEnd={() => setanime(false)}
                                     >
                                         <Image src={img} alt="myImage" width={355} height={355} className='w-full h-80 rounded-xl' />
                                     </motion.div>

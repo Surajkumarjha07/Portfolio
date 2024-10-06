@@ -41,7 +41,7 @@ export default function Resume() {
                                 <h1 className='text-3xl font-bold dancingFont'> My Skills </h1>
                                 <p className='text-gray-400 text-sm my-10 -z-10'> Below you can see my various skills domain, which i have worked on. </p>
                                 <div className='customScroll overflow-y-scroll w-full h-96 flex flex-wrap justify-start items-start gap-7 max-xl:pb-4'>
-                                <Resume_SkillCard title='HTML' img='/html.png' />
+                                    <Resume_SkillCard title='HTML' img='/html.png' />
                                     <Resume_SkillCard title='CSS' img='/css.png' />
                                     <Resume_SkillCard title='Tailwind CSS' img='/tailwindCSS.png' />
                                     <Resume_SkillCard title='JavaScript' img='/javaScript.webp' />
