@@ -51,7 +51,7 @@ export default function Contact() {
             })
                 .then(
                     () => {
-                        toast("message sent successfully!", {
+                        toast("Message sent successfully!", {
                             hideProgressBar: true,
                             autoClose: 1500,
                             type: 'success',
