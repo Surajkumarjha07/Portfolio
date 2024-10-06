@@ -63,8 +63,8 @@ export default function Contact() {
 
     return (
         <>
-            <section className='w-screen h-screen flex flex-col justify-center items-center absolute top-0 bottom-0 left-0 right-0 -z-10'>
-                <div className='w-3/5 h-fit mt-20 flex justify-center items-start pb-7 max-md:flex-col max-xl:w-full max-lg:px-4 max-xl:px-16 max-md:mt-[20rem] max-xl:mt-[10rem] max-2xl:mt-[10rem] max-md:gap-8'>
+            <section className='w-screen h-screen flex flex-col justify-start items-center absolute top-28 bottom-0 left-0 right-0 -z-10'>
+                <div className='w-3/5 h-fit flex justify-center items-start pb-7 max-md:flex-col max-xl:w-full max-lg:px-4 max-xl:px-16 max-md:gap-8'>
                     <AnimatePresence mode="wait">
                         <motion.div
                             initial={{ y: 100, opacity: 0 }}
@@ -74,7 +74,7 @@ export default function Contact() {
                             className='w-1/2 h-full flex justify-center items-start max-md:w-full'
                         >
                             <div className='w-full h-full'>
-                                <form action="" className='w-full h-full bg-gray-600 px-10 py-6 rounded-xl max-md:py-2 max-md:px-2 max-[1100px]:w-96' onSubmit={sendEmail}>
+                                <form action="" className='w-full h-full bg-gray-600 px-10 py-6 rounded-xl max-md:py-2 max-md:px-2' onSubmit={sendEmail}>
                                     <h1 className='text-emerald-400 font-bold text-3xl max-md:text-sm'> Let&apos;s Work together </h1>
                                     <p className='text-gray-400 font-semibold text-sm my-4 max-md:text-xs'> Fill your information and send me the message so i will be in touch with you. </p>
                                     <div className='flex justify-center items-center gap-5'>
@@ -108,7 +108,7 @@ export default function Contact() {
                     <div className='w-1/2 h-full flex flex-col justify-center items-start pl-20 gap-8 max-md:w-full max-md:pl-0'>
                         <div className='flex justify-center items-center gap-5 max-md:gap-2'>
                             <div className='bg-emerald-500 p-2 rounded-md max-md:p-1'>
-                                <Image src="https://img.icons8.com/?size=50&id=9730&format=png" alt="phone" className='w-10 h-10 max-md:w-8 max-md:h-8' width={100} height={100}/>
+                                <Image src="/phone.png" alt="phone" className='w-10 h-10 max-md:w-8 max-md:h-8' width={100} height={100}/>
                             </div>
                             <div>
                                 <p className='font-bold text-sm text-emerald-400 max-md:text-xs'> Phone </p>
@@ -118,7 +118,7 @@ export default function Contact() {
 
                         <div className='flex justify-center items-center gap-5 max-md:gap-2'>
                             <div className='bg-emerald-500 p-2 rounded-md max-md:p-1'>
-                                <Image src="https://cdn-icons-png.freepik.com/256/1159/1159692.png?semt=ais_hybrid" alt="email" className='w-10 h-10 max-md:w-8 max-md:h-8' width={100} height={100}/>
+                                <Image src="/mail.png" alt="email" className='w-10 h-10 max-md:w-8 max-md:h-8' width={100} height={100}/>
                             </div>
                             <div>
                                 <p className='text-emerald-400 font-bold text-sm max-md:text-xs'> Email </p>
@@ -128,7 +128,7 @@ export default function Contact() {
 
                         <div className='flex justify-center items-center gap-5 max-md:gap-2'>
                             <div className='bg-emerald-500 p-2 rounded-md'>
-                                <Image src="https://icons.iconarchive.com/icons/steve/zondicons/256/Location-icon.png" alt="phone" className='w-10 h-10 max-md:w-7 max-md:h-7' width={100} height={100}/>
+                                <Image src="/location.png" alt="phone" className='w-10 h-10 max-md:w-7 max-md:h-7' width={100} height={100}/>
                             </div>
                             <div>
                                 <p className='text-emerald-400 font-bold text-sm max-md:text-xs'> Address </p>
