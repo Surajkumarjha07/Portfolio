@@ -26,27 +26,48 @@ body {
   }
 }
 
-.dancingFont{
+.dancingFont {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-.customScroll::-webkit-scrollbar{
+.customScroll::-webkit-scrollbar {
   width: 4px;
 }
 
-.customScroll::-webkit-scrollbar-thumb{
+.customScroll::-webkit-scrollbar-thumb {
   background-color: rgb(21, 217, 149);
   border-radius: 10px;
 }
 
-.customScroll::-webkit-scrollbar-track{
+.customScroll::-webkit-scrollbar-track {
   background-color: #1F2937;
   border-radius: 10px;
 }
 
-.customScroll::-webkit-scrollbar-thumb:hover{
+.customScroll::-webkit-scrollbar-thumb:hover {
   background-color: rgb(6, 181, 117);
 }
 
+.toastSuccess {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  color: green;
+  font-size: 1.1rem;
+  z-index: 100;
+}
+
+.toastError {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 1.1rem;
+  z-index: 100;
+}
+
+@media (max-width: 600px) {
+
+  .toastSuccess,
+  .toastError {
+    font-size: 0.9rem;
+  }
+}
