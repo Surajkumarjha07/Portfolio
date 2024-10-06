@@ -75,7 +75,7 @@ export default function Contact() {
                         >
                             <div className='w-full h-full'>
                                 <form action="" className='w-full h-full bg-gray-600 px-10 py-6 rounded-xl max-md:py-2 max-md:px-2' onSubmit={sendEmail}>
-                                    <h1 className='text-emerald-400 font-bold text-3xl max-md:text-sm'> Let&apos;s Work together </h1>
+                                    <h1 className='text-emerald-400 font-bold text-3xl max-md:text-xl'> Let&apos;s Work together </h1>
                                     <p className='text-gray-400 font-semibold text-sm my-4 max-md:text-xs'> Fill your information and send me the message so i will be in touch with you. </p>
                                     <div className='flex justify-center items-center gap-5'>
                                         <input type="text" name="firstName" placeholder='First Name' className='p-2 w-full text-gray-300 text-sm font-bold bg-gray-800 rounded-md placeholder:text-xs placeholder:text-gray-400 placeholder:font-bold outline-none' onInput={(e) => setFirstName((e.target as HTMLInputElement).value)} value={firstName} />
