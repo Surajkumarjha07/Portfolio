@@ -5,7 +5,7 @@ import WorkComponent from '../components/workComponent'
 export default function Work() {
   const snoArray = [1,2,3]
   const titleArray = ['eventStream', 'Chantin-Go', 'BumbleBee - Construction App.']
-  const descriptionArray = ['It is a full stack event management app which handles events creation, booking, liked events and have payment gateway integrated also.', 'It is a full stack event management app which handles events creation, booking, liked events and have payment gateway integrated also.', 'It is a full stack event management app which handles events creation, booking, liked events and have payment gateway integrated also.']
+  const descriptionArray = ['It is a full stack event management app which handles events creation, booking, liked events and have payment gateway integrated also.', 'A full-stack real-time chat app with group and individual chat features. It loads all your previous conversations with friends when you reopen the browser.', 'A construction app I built during my internship, featuring file uploads, data analysis, cost estimation, and cost comparisons across different nations.']
   const TechnologiesArray = ['Angular, FastAPI, PostgreSQL, TypeScript, Tailwind CSS', 'NextJs, ExpressJs, MongoDB, TypeScript, Tailwind CSS', 'NextJS, FastAPI, PostgreSQL, Tailwind CSS, Material UI']
   const ImageArray = ['/eventStream.png', '/chatApp.png', '/BumbleBee.png']
   const gitHubLink = ['https://github.com/Surajkumarjha07/eventStream','https://github.com/Surajkumarjha07/Chat-App','']

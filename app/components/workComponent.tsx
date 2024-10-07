@@ -61,7 +61,7 @@ export default function WorkComponent({ sno, title, description, technologies, i
                                         className='w-full flex justify-center items-center'
                                         onAnimationEnd={() => setanime(false)}
                                     >
-                                        <Image src={img} alt="myImage" width={355} height={355} className='w-full h-80 rounded-xl' />
+                                        <Image src={img} alt="myImage" width={10000} height={10000} className='w-full h-80 rounded-xl' />
                                     </motion.div>
                                 </AnimatePresence> : ''
                         }
