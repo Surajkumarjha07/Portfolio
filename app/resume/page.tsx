@@ -27,19 +27,19 @@ export default function Resume() {
 
                     {
                         title === 'Experience' ?
-                            <ResumeComponent title='My Experience' description='Below is a detailed overview of my works and skills' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }]} /> : ''
+                            <ResumeComponent title='My Experience' description='Below is a comprehensive overview of my experience.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }]} /> : ''
                     }
 
                     {
                         title === 'Education' ?
-                            <ResumeComponent title='My Education' description='Below is a detailed overview of my Education throughout my life.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }, { date: '01-july-2022 - Present', title: 'BCA - Bachelor of Computer Applications', company: 'IGNOU - Indira Gandhi National Open University' }, { date: '01-May-2020 - 30-March-2022', title: 'Intermediate School', company: 'Govt. Boys Sr. Sec. High School (Tikona Park)' }]} /> : ''
+                            <ResumeComponent title='My Education' description='Below is a comprehensive overview of my educational background.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }, { date: '01-july-2022 - Present', title: 'BCA - Bachelor of Computer Applications', company: 'IGNOU - Indira Gandhi National Open University' }, { date: '01-May-2020 - 30-March-2022', title: 'Intermediate School', company: 'Govt. Boys Sr. Sec. High School (Tikona Park)' }]} /> : ''
                     }
 
                     {
                         title === 'Skills' ?
                             <div className='w-full h-full max-xl:px-4'>
                                 <h1 className='text-3xl font-bold dancingFont'> My Skills </h1>
-                                <p className='text-gray-400 text-sm my-10 -z-10'> Below you can see my various skills domain, which i have worked on. </p>
+                                <p className='text-gray-400 text-sm my-10 -z-10'> Below are the various skill domains I have worked in. </p>
                                 <div className='customScroll overflow-y-scroll w-full h-96 flex flex-wrap justify-start items-start gap-7 max-xl:pb-4'>
                                     <Resume_SkillCard title='HTML' img='/html.png' />
                                     <Resume_SkillCard title='CSS' img='/css.png' />
@@ -66,8 +66,8 @@ export default function Resume() {
                         title === 'About Me' ?
                             <div className='w-full h-full max-xl:px-4'>
                                 <h1 className='text-3xl font-bold dancingFont'> About Me </h1>
-                                <p className='text-gray-400 text-sm my-10 -z-10'> My Introduction  </p>
-                                <div className='customScroll overflow-y-scroll w-full h-48 flex flex-wrap justify-start items-start'>
+                                <p className='text-gray-400 text-sm my-10 -z-10'> Below are my contact details.  </p>
+                                <div className='customScroll overflow-y-scroll w-full h-48 flex flex-wrap justify-start items-start max-sm:h-fit'>
                                     <div className='w-5/6 flex justify-between items-start max-md:flex-col max-md:gap-4 max-md:my-5'>
                                         <div className='flex justify-start gap-6 w-60'>
                                             <p className='font-semibold text-gray-400 text-sm'> Name </p>
