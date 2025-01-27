@@ -88,7 +88,7 @@ export default function Home() {
                                         <p className='text-sm font-medium text-gray-300 max-sm:text-xs'> <span className='text-white font-bold'> Full Stack Web Application </span> and <span className='text-white font-bold'> Mobile App Developer </span> with expertise in designing and developing end-to-end solutions. Skilled in both <span className='text-white font-bold'> front-end </span> and <span className='text-white font-bold'> back-end </span> technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
 
                                         <div className='flex justify-start items-center gap-10 my-10 max-md:gap-5 max-md:justify-center'>
-                                            <a href={'/Resume.pdf'} download="SurajResume">
+                                            <a href={'/Resume.pdf'} download={"SurajResume"}>
                                                 <button className='flex justify-center items-center text-sm gap-4 font-bold bg-emerald-400 text-gray-950 border-2 border-emerald-400 px-4 py-2 rounded-full max-md:px-3 max-[350px]:py-1 max-sm:text-xs max-lg:gap-2'> Download CV <Image src="/download.png" alt='' width={20} height={20} className='max-md:w-4 max-md:h-4' /> </button>
                                             </a>
 
@@ -121,7 +121,7 @@ export default function Home() {
 
                                     <div className='w-fit flex justify-center items-center max-xl:w-fit'>
                                         <div className='w-96 h-96 rounded-full border-4 border-emerald-400 flex justify-center items-center overflow-hidden max-md:w-48 max-md:h-48 max-xl:w-72 max-xl:h-72'>
-                                            <Image src="/MyImage4.jpg" alt="myImage" width={500} height={500} className='w-full h-full z-40' />
+                                            <Image src="/MyImage4.jpg" alt="myImage" width={1000} height={1000} className='w-full h-full z-40' />
                                         </div>
                                     </div>
                                 </div>
