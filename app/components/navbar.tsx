@@ -16,7 +16,7 @@ export default function Navbar() {
                 <div className='w-3/5 flex justify-between items-center mx-auto max-sm:px-0 max-lg:w-screen max-md:flex-col max-md:items-center max-md:gap-2 max-lg:justify-between max-lg:px-4'>
                     <div>
                         <Link href={'/'}>
-                            <h1 className='text-2xl font-bold hover:text-emerald-400 cursor-pointer transition-all duration-300'> Suraj kumar </h1>
+                            <h1 className='text-2xl font-bold hover:text-emerald-400 cursor-pointer transition-all duration-300' onClick={() => active("Home")}> Suraj kumar </h1>
                         </Link>
                     </div>
                     <ul className='flex justify-start items-center gap-10 max-sm:gap-4'>

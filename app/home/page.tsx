@@ -51,7 +51,7 @@ export default function Home() {
         let totalDelay = 0;
 
         for (let i = 0; i <= index; i++) {
-            const delay = i > index - 10 ? 120 : 40;
+            const delay = i > index - 20 ? 80 : 20;
 
             setTimeout(() => {
                 setCommits(i);
@@ -62,12 +62,11 @@ export default function Home() {
     };
 
     useEffect(() => {
-        increaseExperience(2)
-        increaseProjects(10)
-        increaseTechnologies(12)
-        increaseCommits(61)
+        increaseExperience(6)
+        increaseProjects(11)
+        increaseTechnologies(25)
+        increaseCommits(360)
     }, [])
-
 
     return (
         <>
@@ -83,13 +82,13 @@ export default function Home() {
                             <>
                                 <div className='w-3/5 h-fit mx-auto flex justify-between items-center max-xl:justify-center max-[428px]:flex-col max-lg:w-full max-md:px-2 max-xl:gap-7 max-xl:w-full'>
                                     <div className='w-1/2 max-md:w-full max-xl:w-1/2'>
-                                        <p className='text-lg font-bold max-xl:text-sm'> Software Developer | Web-Application Developer </p>
+                                        <p className='text-lg font-bold max-xl:text-sm'> Web-Application Developer | Mobile App Developer </p>
                                         <p className='text-6xl font-bold mt-1 max-xl:text-3xl'> Hello I&apos;m </p>
                                         <p className='text-5xl font-bold text-emerald-400 dancingFont mt-2 mb-4 max-xl:text-2xl'> Suraj kumar jha </p>
-                                        <p className='text-sm font-semibold text-gray-300 max-sm:text-xs'> Full Stack Web Application and Software Developer with expertise in designing and developing end-to-end solutions. Skilled in both front-end and back-end technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
+                                        <p className='text-sm font-medium text-gray-300 max-sm:text-xs'> <span className='text-white font-bold'> Full Stack Web Application </span> and <span className='text-white font-bold'> Mobile App Developer </span> with expertise in designing and developing end-to-end solutions. Skilled in both <span className='text-white font-bold'> front-end </span> and <span className='text-white font-bold'> back-end </span> technologies, I create efficient, secure, and user-friendly applications. Passionate about transforming ideas into functional software that drives business success. </p>
 
                                         <div className='flex justify-start items-center gap-10 my-10 max-md:gap-5 max-md:justify-center'>
-                                            <a href={'/My_Resume.docx'} download="SurajKumarJha">
+                                            <a href={'/Resume.pdf'} download="Suraj_Resume">
                                                 <button className='flex justify-center items-center text-sm gap-4 font-bold bg-emerald-400 text-gray-950 border-2 border-emerald-400 px-4 py-2 rounded-full max-md:px-3 max-[350px]:py-1 max-sm:text-xs max-lg:gap-2'> Download CV <Image src="/download.png" alt='' width={20} height={20} className='max-md:w-4 max-md:h-4' /> </button>
                                             </a>
 
@@ -120,18 +119,18 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className='w-1/2 flex justify-center items-center max-xl:w-fit'>
+                                    <div className='w-fit flex justify-center items-center max-xl:w-fit'>
                                         <div className='w-96 h-96 rounded-full border-4 border-emerald-400 flex justify-center items-center overflow-hidden max-md:w-48 max-md:h-48 max-xl:w-72 max-xl:h-72'>
-                                            <Image src="/myImage.jpg" alt="myImage" width={1000} height={1000} className='w-full h-full' />
+                                            <Image src="/MyImage4.jpg" alt="myImage" width={500} height={500} className='w-full h-full z-40' />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className='w-3/5 flex justify-start items-center gap-20 mt-10 mx-auto max-md:flex-wrap max-md:gap-4 max-md:justify-between max-md:w-full max-md:px-2 pb-10 max-xl:justify-between max-xl:w-full max-xl:px-4'>
+                                <div className='w-3/5 flex justify-start items-center gap-20 mt-10 mx-auto max-xl:flex-wrap max-md:gap-4 max-md:justify-between max-md:px-2 pb-10 max-xl:justify-between max-xl:w-full max-xl:px-4'>
                                     <div className='flex justify-center items-center gap-3'>
                                         <p className='text-6xl font-bold max-md:text-3xl'> {experience} </p>
                                         <div className='text-sm font-medium max-md:text-[10px]'>
-                                            <p> years of </p>
+                                            <p> months of </p>
                                             <p> experience </p>
                                         </div>
                                     </div>

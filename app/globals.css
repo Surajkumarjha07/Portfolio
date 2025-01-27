@@ -71,3 +71,16 @@ body {
     font-size: 0.9rem;
   }
 }
+/* 
+.rotateDiv{
+  animation: rotated 1s infinite;
+}
+
+@keyframes rotated {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+} */

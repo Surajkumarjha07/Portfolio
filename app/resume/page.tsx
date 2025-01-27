@@ -49,6 +49,7 @@ export default function Resume() {
                                     <Resume_SkillCard title='React.js' img='/React.webp' />
                                     <Resume_SkillCard title='Next.js' img='/nextjs.png' />
                                     <Resume_SkillCard title='Angular' img='/angular.png' />
+                                    <Resume_SkillCard title='React Native' img='/reactNative.png' />
                                     <Resume_SkillCard title='NodeJs' img='/nodeJs.webp' />
                                     <Resume_SkillCard title='ExpressJs' img='/express.webp' />
                                     <Resume_SkillCard title='FastAPI' img='/fastapi.svg' />
