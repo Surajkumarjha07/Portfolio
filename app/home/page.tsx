@@ -121,7 +121,7 @@ export default function Home() {
 
                                     <div className='w-fit flex justify-center items-center max-xl:w-fit'>
                                         <div className='w-96 h-96 rounded-full border-4 border-emerald-400 flex justify-center items-center overflow-hidden max-md:w-48 max-md:h-48 max-xl:w-72 max-xl:h-72'>
-                                            <Image src="/MyImage4.jpg" alt="myImage" width={1000} height={1000} className='w-full h-full z-40' />
+                                            <Image src={"/myImage.jpg"} alt="myImage" width={1000} height={1000} className='w-full h-full z-40' />
                                         </div>
                                     </div>
                                 </div>
