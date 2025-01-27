@@ -105,7 +105,7 @@ export default function Contact() {
 
                                     <div className='relative'>
                                         <input type="text" name="services" placeholder='Select a Service' className='hide p-2 w-full text-gray-300 text-sm font-bold bg-gray-800 rounded-md placeholder:text-xs placeholder:text-gray-400 placeholder:font-bold outline-none' value={serviceName} onClick={showBlock} />
-                                        <div className={hide ? 'absolute top-11 w-full z-20 hidden' : 'absolute top-11 w-full z-20 block bg-gray-700 rounded-md'}>
+                                        <div className={hide ? 'absolute top-11 w-full z-20 hidden' : 'absolute top-11 w-full z-20 block bg-gray-800 rounded-md overflow-hidden'}>
                                             <p className='text-gray-400 hover:bg-emerald-400 hover:text-gray-800 text-sm py-1 px-4 cursor-pointer font-bold' onClick={selectService}> Software Development </p>
                                             <p className='text-gray-400 hover:bg-emerald-400 hover:text-gray-800 text-sm py-1 px-4 cursor-pointer font-bold' onClick={selectService}> Full Stack Web-Application Development </p>
                                             <p className='text-gray-400 hover:bg-emerald-400 hover:text-gray-800 text-sm py-1 px-4 cursor-pointer font-bold' onClick={selectService}> Mobile App Development </p>
