@@ -91,7 +91,7 @@ export default function Contact() {
                             className='w-1/2 h-full flex justify-center items-start max-md:w-full'
                         >
                             <div className='w-full h-full'>
-                                <form action="" className='w-full h-full bg-gray-700 px-10 py-6 rounded-xl max-md:py-2 max-md:px-2  shadow-gray-900' onSubmit={sendEmail}>
+                                <form action="" className='w-full h-full bg-gray-700 px-10 py-6 rounded-xl max-md:py-2 max-md:px-2 shadow-lg shadow-gray-900' onSubmit={sendEmail}>
                                     <h1 className='text-emerald-400 font-bold text-3xl max-sm:text-xl'> Let&apos;s Work together </h1>
                                     <p className='text-gray-400 font-semibold text-sm my-4 max-md:text-xs'> Fill your information and send me the message so i will be in touch with you. </p>
                                     <div className='flex justify-center items-center gap-5'>
