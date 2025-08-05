@@ -27,12 +27,12 @@ export default function Resume() {
 
                     {
                         title === 'Experience' ?
-                            <ResumeComponent title='My Experience' description='Below is a comprehensive overview of my experience.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }]} /> : ''
+                            <ResumeComponent title='My Experience' description='Below is a comprehensive overview of my experience.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technology - Indonesia (Remote)' }]} /> : ''
                     }
 
                     {
                         title === 'Education' ?
-                            <ResumeComponent title='My Education' description='Below is a comprehensive overview of my educational background.' cards={[{ date: '01-May-2024 - 30-September-2024', title: 'Full Stack Developer Intern', company: 'Optimus Technologies - Indonesia (Remote)' }, { date: '01-july-2022 - Present', title: 'BCA - Bachelor of Computer Applications', company: 'IGNOU - Indira Gandhi National Open University' }, { date: '01-May-2020 - 30-March-2022', title: 'Intermediate School', company: 'Govt. Boys Sr. Sec. High School (Tikona Park)' }]} /> : ''
+                            <ResumeComponent title='My Education' description='Below is a comprehensive overview of my educational background.' cards={[{ date: '01-july-2022 - Present', title: 'BCA - Bachelor of Computer Applications', company: 'IGNOU - Indira Gandhi National Open University' }, { date: '01-May-2020 - 30-March-2022', title: 'Intermediate School', company: 'Govt. Boys Sr. Sec. High School (Tikona Park)' }]} /> : ''
                     }
 
                     {
@@ -51,13 +51,16 @@ export default function Resume() {
                                     <Resume_SkillCard title='Angular' img='/angular.png' />
                                     <Resume_SkillCard title='React Native' img='/reactNative.png' />
                                     <Resume_SkillCard title='NodeJs' img='/nodeJs.webp' />
+                                    <Resume_SkillCard title='Docker' img='/docker.webp' />
+                                    <Resume_SkillCard title='Redis' img='/redis.png' />
+                                    <Resume_SkillCard title='Kafka' img='/kafka.png' />
                                     <Resume_SkillCard title='ExpressJs' img='/express.webp' />
                                     <Resume_SkillCard title='FastAPI' img='/fastapi.svg' />
-                                    <Resume_SkillCard title='MongoDB' img='/mongoDB.svg' />
+                                    <Resume_SkillCard title='MySQL' img='/mysql.png' />
                                     <Resume_SkillCard title='PostgreSQL' img='/PostgreSQL.png' />
+                                    <Resume_SkillCard title='MongoDB' img='/mongoDB.svg' />
                                     <Resume_SkillCard title='Java' img='/Java.png' />
                                     <Resume_SkillCard title='C++' img='/c++.png' />
-
                                 </div>
                             </div>
                             : ''
@@ -83,7 +86,7 @@ export default function Resume() {
                                     <div className='w-5/6 flex justify-between items-start max-md:flex-col max-md:gap-4 max-md:my-5'>
                                         <div className='flex justify-start gap-6 w-60'>
                                             <p className='font-semibold text-gray-400 text-sm'> Experience </p>
-                                            <p className='font-semibold text-gray-300 text-sm'> 6 months </p>
+                                            <p className='font-semibold text-gray-300 text-sm'> 1 years </p>
                                         </div>
 
                                         <div className='flex justify-start gap-6 w-60'>
