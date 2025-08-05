@@ -3,18 +3,34 @@ import React, { useState } from 'react'
 import WorkComponent from '../components/workComponent'
 
 export default function Work() {
-  const snoArray = [1, 2, 3, 4]
-  const titleArray = ['Realtime Whiteboard Collaboration App', 'EventStream', 'Chantin-Go', 'BumbleBee - Construction App.']
+  const snoArray = [1, 2, 3, 4, 5]
+
+  const titleArray = ['SwiftRide - Ride Sharing Web-Application', 'Realtime Collaborative Whiteboard Web-App', 'EventStream', 'Chantin-Go', 'BumbleBee - Construction App.']
+
   const descriptionArray = [
+    'Built a ride-sharing platform which is based on microservice architecture and equipped with features such as live location tracking, ride matching, and ride status, etc. Implemented PostgreSQL geospatial queries with a bounding box mechanism to efficiently find nearby captains, reducing database query time by 8–10x (to ~10ms).',
+
     'Developed a real-time collaborative whiteboard app with drawing, chat, notifications, customizable elements, and save/edit features using Next.js, Express, MongoDB, and Socket.IO.',
+
     'It is a full stack event management app which handles events creation, booking, liked events and have payment gateway integrated also.',
     'A full-stack real-time chat app with group and individual chat features. It loads all your previous conversations with friends when you reopen the browser.',
+
     'A construction app I built during my internship, featuring file uploads, data analysis, cost estimation, and cost comparisons across different nations.'
   ]
-  const TechnologiesArray = ['NextJs, Express, Node.js, MongoDB, Socket.IO, TypeScript, Tailwind CSS', 'Angular, FastAPI, PostgreSQL, TypeScript, Tailwind CSS', 'NextJs, ExpressJs, MongoDB, TypeScript, Tailwind CSS', 'NextJS, FastAPI, PostgreSQL, Tailwind CSS, Material UI']
-  const ImageArray = ['/whiteboard.png','/eventStream.png', '/chatApp.png', '/BumbleBee.png']
-  const gitHubLink = ['https://github.com/Surajkumarjha07/NexDesk', 'https://github.com/Surajkumarjha07/eventStream', 'https://github.com/Surajkumarjha07/Chat-App', '']
-  const appLink = ['https://nexdesk.onrender.com/', '', '', '']
+
+  const TechnologiesArray = [
+    'Node.js, Express, Kafka, Redis, Docker, MySQL (local), PostgreSQL (production), Socket.IO, Next.js, Tailwind CSS, Leaflet maps, Prisma ORM',
+    'NextJs, Express, Node.js, MongoDB, Socket.IO, TypeScript, Tailwind CSS',
+    'Angular, FastAPI, PostgreSQL, TypeScript, Tailwind CSS',
+    'NextJs, ExpressJs, MongoDB, TypeScript, Tailwind CSS',
+    'NextJS, FastAPI, PostgreSQL, Tailwind CSS, Material UI'
+  ]
+
+  const ImageArray = ['/swiftRide.png', '/whiteboard.png', '/eventStream.png', '/chatApp.png', '/BumbleBee.png']
+
+  const gitHubLink = ['', 'https://github.com/Surajkumarjha07/NexDesk', 'https://github.com/Surajkumarjha07/eventStream', 'https://github.com/Surajkumarjha07/Chat-App', '']
+
+  const appLink = ['', 'https://nexdesk.onrender.com/', '', '', '']
 
   const [index, setIndex] = useState(0)
 

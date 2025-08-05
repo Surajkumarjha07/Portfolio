@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Navbar() {
-    const [title, setTitle] = useState<string>('')
+    const [title, setTitle] = useState<string>('Home')
 
     function active(index: string) {
         setTitle(index)

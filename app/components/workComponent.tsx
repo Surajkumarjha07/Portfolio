@@ -49,7 +49,7 @@ export default function WorkComponent({ sno, title, description, technologies, i
                         </div>
                     </div>
 
-                    <div className='w-1/2 h-full flex flex-col justify-between items-end max-md:w-full'>
+                    <div className='w-1/2 h-full flex flex-col justify-start items-end max-md:w-full'>
                         {
                             anime ?
                                 <AnimatePresence mode="wait">
@@ -65,16 +65,18 @@ export default function WorkComponent({ sno, title, description, technologies, i
                                     </motion.div>
                                 </AnimatePresence> : ''
                         }
+
                         <div className='flex justify-end items-center gap-5 my-10'>
-                            <button className='flex justify-center items-center bg-emerald-400 p-1' onClick={previous}>
+                            <button className='flex justify-center items-center bg-emerald-400 p-1 rounded-md' onClick={previous}>
                                 <Image src={'/leftArrow2.png'} alt='left arrow' width={25} height={25} />
                             </button>
 
-                            <button className='flex justify-center items-center bg-emerald-400 p-1' onClick={next}>
+                            <button className='flex justify-center items-center bg-emerald-400 p-1 rounded-md' onClick={next}>
                                 <Image src={'/rightArrow2.png'} alt='right arrow' width={25} height={25} />
                             </button>
                         </div>
-                    </div> </>
+                    </div>
+                </>
             }
         </>
     )
