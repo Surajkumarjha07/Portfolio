@@ -12,7 +12,7 @@
     "@emailjs/browser": "^4.4.1",
     "express": "^4.21.0",
     "framer-motion": "^11.11.0",
-    "next": "14.2.13",
+    "next": "14.2.35",
     "nodemon": "^3.1.7",
     "react": "^18",
     "react-dom": "^18",
